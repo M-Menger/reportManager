@@ -21,13 +21,6 @@ public class FileManager {
         this.defaultDirectory = initialDirectory;
     }
 
-    /**
-     * Abre um seletor de arquivos na pasta de downloads ou diretório especificado
-     * @param allowMultipleSelection Se true, permite seleção múltipla de arquivos
-     * @param fileFilters Array de filtros de arquivo (ex: {"jpg", "png"})
-     * @param filterDescription Descrição do filtro (ex: "Imagens")
-     * @return Lista de arquivos selecionados ou lista vazia se cancelado
-     */
     public List<File> selectFiles(boolean allowMultipleSelection, String[] fileFilters, String filterDescription) {
         List<File> selectedFiles = new ArrayList<>();
 
